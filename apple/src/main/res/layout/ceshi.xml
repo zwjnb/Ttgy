@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/default_ptr_flip"></android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/main_radio1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio1_fresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@mipmap/icon_juice"
+            android:text="新鲜点" />
+
+        <RadioButton
+            android:id="@+id/radio1_Qfresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@mipmap/icon_juice"
+            android:text="抢鲜啦" />
+
+        <RadioButton
+            android:id="@+id/radio1_Shake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@mipmap/icon_juice"
+            android:text="摇一摇" />
+
+        <RadioButton
+            android:id="@+id/radio1_fresh2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:drawableTop="@mipmap/icon_juice"
+            android:text="充值有礼" />
+    </RadioGroup>
+</ScrollView>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:scrollbars="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/head_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"></android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/head_layout"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/head_viewpager"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/head_radio1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio1_fresh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_radio1"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/icon_juice"
+                    android:gravity="center"
+                    android:text="新鲜点" />
+
+                <RadioButton
+                    android:id="@+id/radio1_Qfresh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_radio1"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/icon_flash"
+                    android:gravity="center"
+                    android:text="抢鲜啦" />
+
+                <RadioButton
+                    android:id="@+id/radio1_juice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_radio1"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/icon_juice"
+                    android:gravity="center"
+                    android:text="摇一摇" />
+
+                <RadioButton
+                    android:id="@+id/radio1_topup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_radio1"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/icon_topup"
+                    android:gravity="center"
+                    android:text="充值有礼" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/head_radio2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio2_fresh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_radio1"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/home_order"
+                    android:gravity="center"
+                    android:text="物流.售后" />
+
+                <RadioButton
+                    android:id="@+id/radio2_Qfresh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_radio1"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/redemption"
+                    android:gravity="center"
+                    android:text="提货券" />
+
+                <RadioButton
+                    android:id="@+id/radio2_juice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_radio1"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/enterprise"
+                    android:gravity="center"
+                    android:text="企业团购" />
+
+                <RadioButton
+                    android:id="@+id/radio2_topup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/item_radio1"
+                    android:button="@null"
+                    android:drawableTop="@mipmap/icon_eattry"
+                    android:gravity="center"
+                    android:text="免费试吃" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/top_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/head_layout"></FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/mix_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@id/top_fragment"></FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/list_FrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="2250dp"
+
+            android:layout_below="@id/mix_fragment"></FrameLayout>
+    </RelativeLayout>
+
+</ScrollView>
